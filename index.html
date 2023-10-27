@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>carrito de compras</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main class="container mt-5">
+      <button class="btn btn-danger" data-reset="Reset">Reset</button>
+      <div class="row text-center">
+        <article class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Frutillas🍓</h5>
+                    <button class="btn btn-primary" data-fruta="Frutillas🍓">Agregar</button>
+                </div>
+            </div>
+        </article>
+        <article class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Pera🍐</h5>
+                    <button class="btn btn-primary"data-fruta="Pera🍐">Agregar</button>
+                </div>
+            </div>
+        </article>
+        <article class="col-sm-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Naranja🍊</h5>
+                    <button class="btn btn-primary"data-fruta="Naranja🍊">Agregar</button>
+                </div>
+            </div>
+        </article>
+      </div>
+    </main>
+    <section class="container mt-3">
+        <ul id="carrito" class="border ps-0"></ul>
+    </section>
+    <template id="template">
+        <li class="p-2 w-100 list-group-item d-flex justify-content-between aling-item-center">
+            <span class="lead">Fruta</span>
+            <span class="badge bg-primary rounded-pill">1</span>
+        </li>
+    </template>
+    <script src="app.js"></script>
+  </body>
+</html>
